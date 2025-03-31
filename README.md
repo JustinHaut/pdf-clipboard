@@ -20,6 +20,25 @@ npm install github:JustinHaut/pdf-clipboard
 yarn add github:JustinHaut/pdf-clipboard
 ```
 
+If you encounter module resolution issues after installation, try:
+
+```bash
+# Force resolution with TypeScript path mapping in your app's tsconfig.json
+{
+  "compilerOptions": {
+    "paths": {
+      "pdf-clipboard": ["./node_modules/pdf-clipboard/build"]
+    }
+  }
+}
+```
+
+Or try installing the package with a specific branch:
+
+```bash
+yarn add github:JustinHaut/pdf-clipboard#main
+```
+
 ### Via npm (coming soon)
 
 ```bash

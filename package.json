@@ -4,6 +4,14 @@
   "description": "React Native module for accessing PDF data from the clipboard in Expo apps.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "module": "build/index.js",
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "import": "./build/index.js",
+      "require": "./build/index.js"
+    }
+  },
   "scripts": {
     "build": "expo-module build",
     "clean": "expo-module clean",
@@ -22,6 +30,7 @@
     "ios",
     "!android/build",
     "!ios/build",
+    "!example",
     "expo-module.config.json",
     "README.md"
   ],
