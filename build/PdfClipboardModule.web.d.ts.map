@@ -1,0 +1,1 @@
+{"version":3,"file":"PdfClipboardModule.web.d.ts","sourceRoot":"","sources":["../src/PdfClipboardModule.web.ts"],"names":[],"mappings":"AAAA,OAAO,EAAqB,YAAY,EAAE,MAAM,MAAM,CAAC;AAEvD,OAAO,EAAE,wBAAwB,EAAE,MAAM,sBAAsB,CAAC;AAEhE,cAAM,kBAAmB,SAAQ,YAAY,CAAC,wBAAwB,CAAC;IACrE,EAAE,SAAW;IACP,aAAa,CAAC,KAAK,EAAE,MAAM,GAAG,OAAO,CAAC,IAAI,CAAC;IAGjD,KAAK;CAGN;;AAED,wBAAqD"}
