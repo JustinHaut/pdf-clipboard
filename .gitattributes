@@ -1,0 +1,10 @@
+# Exclude example directory from GitHub downloads/tarball
+example export-ignore
+example/ export-ignore
+example/** export-ignore
+
+# Exclude development files
+.github export-ignore
+.vscode export-ignore
+.gitattributes export-ignore
+pdf-clipboard-*.tgz export-ignore
