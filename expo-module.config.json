@@ -1,0 +1,17 @@
+{
+  "platforms": [
+    "apple",
+    "android",
+    "web"
+  ],
+  "apple": {
+    "modules": [
+      "PdfClipboardModule"
+    ]
+  },
+  "android": {
+    "modules": [
+      "expo.modules.pdfclipboard.PdfClipboardModule"
+    ]
+  }
+}
