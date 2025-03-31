@@ -15,15 +15,22 @@ A React Native module for accessing PDF data from the clipboard in Expo apps. Th
 ### Via GitHub (recommended for now)
 
 ```bash
+# Install the latest version
 npm install github:JustinHaut/pdf-clipboard
 # or
 yarn add github:JustinHaut/pdf-clipboard
+
+# Or install a specific commit (recommended for stability)
+yarn add github:JustinHaut/pdf-clipboard#7959de7
 ```
 
-If you encounter module resolution issues after installation, try:
+#### Troubleshooting Installation Issues
 
-```bash
-# Force resolution with TypeScript path mapping in your app's tsconfig.json
+If you encounter module resolution issues after installation, try these solutions:
+
+1. **Force TypeScript path mapping** in your app's tsconfig.json:
+
+```json
 {
   "compilerOptions": {
     "paths": {
@@ -33,10 +40,25 @@ If you encounter module resolution issues after installation, try:
 }
 ```
 
-Or try installing the package with a specific branch:
+2. **Create a local .npmrc file** in your project root:
+
+```
+# .npmrc
+public-hoist-pattern[]=pdf-clipboard
+```
+
+3. **Install from a specific git tag/commit** (more reliable):
 
 ```bash
-yarn add github:JustinHaut/pdf-clipboard#main
+yarn add github:JustinHaut/pdf-clipboard#7959de7
+```
+
+4. **Use resolutions in package.json** (yarn workspaces):
+
+```json
+"resolutions": {
+  "pdf-clipboard": "github:JustinHaut/pdf-clipboard#7959de7"
+}
 ```
 
 ### Via npm (coming soon)
